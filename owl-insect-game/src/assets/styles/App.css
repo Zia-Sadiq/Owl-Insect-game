@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.custom-navbar {
+  background-color: #f8f9fa !important;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.option-button {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #f8f9fa; /* Matches the navbar color */
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-img {
+  width: 50px;
+  height: 50px;
+}
+
+.option-text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 140px); /* Adjusted height considering navbar and margins */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 40px; /* Adjusted padding to move content slightly lower */
+}
+
+.owl-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Adjusted margin to separate owl from buttons */
+}
+
+.owl-img {
+  width: 150px;
+  position: relative;
+}
+
+.eye-container {
+  position: absolute;
+  top: 60px; /* Adjust this value to position eyes vertically */
+  left: 35px; /* Adjust this value to position eyes horizontally */
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eye-img {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.left-eye {
+  left: 10px;
+}
+
+.right-eye {
+  right: -25px;
+}
+
+.navigation-buttons {
+  position: absolute;
+  bottom: 60px; /* Moved navigation buttons higher */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-button {
+  width: 70px; /* Increased size of navigation buttons */
+  height: 70px; /* Increased size of navigation buttons */
+  background-color: #f8f9fa; /* Matches the navbar color */
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-text {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .option-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .option-text {
+    font-size: 10px;
+  }
+
+  .owl-img {
+    width: 120px;
+  }
+
+  .eye-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-text {
+    font-size: 10px;
+  }
+
+  .navigation-buttons {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .options-container {
+    flex-direction: column;
+  }
+
+  .option-button {
+    margin: 5px 0;
+  }
+
+  .main-content {
+    height: calc(100vh - 180px); /* Adjust height considering navbar and margins */
+  }
+
+  .owl-img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .owl-img {
+    opacity: 1; /* Make sure to add this class or use JavaScript to control when the image should be visible */
+  }
+}
